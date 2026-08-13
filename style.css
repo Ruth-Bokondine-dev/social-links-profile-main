@@ -4,6 +4,7 @@
   --grey-700: hsl(0, 0%, 20%);
   --grey-800: hsl(0, 0%, 12%);
   --grey-900: hsl(0, 0%, 8%);
+  --grey-800-opacity: hsl(0, 0%, 80%);
 }
 
 *, *::before, *::after {
@@ -59,7 +60,7 @@ body {
 
 .profile-bio {
   font-size: 0.875rem;
-  color: hsl(0, 0%, 80%);
+  color: var(--grey-800-opacity);
   margin-bottom: 1.5rem;
 }
 
@@ -102,7 +103,7 @@ body {
   font-size: 0.75rem;
   text-align: center;
   margin-top: 1.5rem;
-  color: hsl(0, 0%, 80%);
+  color: var(--grey-800-opacity);
 }
 
 .attribution a {
@@ -113,4 +114,11 @@ body {
 .attribution a:hover,
 .attribution a:focus-visible {
   color: var(--white);
+}
+
+/* Accessibilité : Réduction des mouvements pour les utilisateurs sensibles */
+@media (prefers-reduced-motion: reduce) {
+  .profile-links a {
+    transition: none;
+  }
 }
