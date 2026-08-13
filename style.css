@@ -1,0 +1,117 @@
+/* --- Variables globales (inspirées du style-guide) --- */
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+/* --- Reset de base --- */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--grey-900);
+  color: var(--white);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+/* --- Carte principale --- */
+.profile-card {
+  background-color: var(--grey-800);
+  width: 100%;
+  max-width: 24rem;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* --- En-tête (Avatar, Nom, Localisation, Bio) --- */
+.profile-avatar {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.profile-location {
+  color: var(--green);
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.profile-bio {
+  font-size: 0.875rem;
+  color: hsl(0, 0%, 80%);
+  margin-bottom: 1.5rem;
+}
+
+/* --- Liens sociaux --- */
+.profile-links {
+  width: 100%;
+}
+
+.profile-links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profile-links a {
+  display: block;
+  background-color: var(--grey-700);
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 0.875rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* --- Effets de survol et focus --- */
+.profile-links a:hover,
+.profile-links a:focus {
+  background-color: var(--green);
+  color: var(--grey-900);
+  outline: none;
+}
+
+/* --- Pied de page / Attribution --- */
+.attribution {
+  font-size: 0.75rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  color: hsl(0, 0%, 70%);
+}
+
+.attribution a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
