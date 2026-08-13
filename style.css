@@ -75,6 +75,18 @@ body {
   gap: 1rem;
 }
 
+/* Sélecteurs généraux de liens en premier */
+.attribution a {
+  color: var(--green);
+  text-decoration: underline;
+}
+
+.attribution a:hover,
+.attribution a:focus-visible {
+  color: var(--white);
+}
+
+/* Sélecteurs plus spécifiques ensuite */
 .profile-links a {
   display: block;
   background-color: var(--grey-700);
@@ -104,16 +116,6 @@ body {
   text-align: center;
   margin-top: 1.5rem;
   color: var(--grey-800-opacity);
-}
-
-.attribution a {
-  color: var(--green);
-  text-decoration: underline;
-}
-
-.attribution a:hover,
-.attribution a:focus-visible {
-  color: var(--white);
 }
 
 /* Accessibilité : Réduction des mouvements pour les utilisateurs sensibles */
