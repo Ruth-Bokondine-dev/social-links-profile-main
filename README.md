@@ -23,7 +23,7 @@ Les utilisateurs doivent pouvoir :
 
 ### Capture d'écran
 
-![Capture d'écran de la solution](./screenshot.png)
+![Capture d'écran de la solution](assets/images/screenshot.png)
 
 ### Liens
 

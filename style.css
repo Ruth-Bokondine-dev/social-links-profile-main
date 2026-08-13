@@ -28,7 +28,7 @@ body {
   background-color: var(--grey-800);
   width: 100%;
   max-width: 24rem;
-  padding: 2rem;
+  padding: 2.5rem 2rem;
   border-radius: 0.75rem;
   display: flex;
   flex-direction: column;
@@ -86,26 +86,31 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-
-.profile-links a:hover,
-.profile-links a:focus {
+.profile-links a:hover {
   background-color: var(--green);
   color: var(--grey-900);
-  outline: none;
+}
+
+.profile-links a:focus-visible {
+  background-color: var(--green);
+  color: var(--grey-900);
+  outline: 3px solid var(--white);
+  outline-offset: 2px;
 }
 
 .attribution {
   font-size: 0.75rem;
   text-align: center;
   margin-top: 1.5rem;
-  color: hsl(0, 0%, 70%);
+  color: hsl(0, 0%, 80%);
 }
 
 .attribution a {
   color: var(--green);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
-.attribution a:hover {
-  text-decoration: underline;
+.attribution a:hover,
+.attribution a:focus-visible {
+  color: var(--white);
 }

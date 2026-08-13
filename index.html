@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+
   <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Social links profile</title>
@@ -13,26 +20,28 @@
 
   <main class="profile-card">
     <header class="profile-header">
-      <img src="./assets/images/avatar-jessica.jpeg" alt="Photo de profil de Jessica Randall" class="profile-avatar">
+      <img src="./assets/images/avatar-jessica.jpeg" alt="Portrait de Jessica Randall" class="profile-avatar">
       <h1 class="profile-name">Jessica Randall</h1>
       <p class="profile-location">London, United Kingdom</p>
       <p class="profile-bio">"Front-end developer and avid reader."</p>
     </header>
 
-    <nav class="profile-links">
+    <nav class="profile-links" aria-label="Social media links">
       <ul>
-        <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="#" target="_blank" rel="noopener">Frontend Mentor</a></li>
-        <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="#" target="_blank" rel="noopener">Twitter</a></li>
-        <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.frontendmentor.io" target="_blank" rel="noopener noreferrer">Frontend Mentor</a></li>
+        <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+        <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
       </ul>
     </nav>
   </main>
   
+  <!-- Pied de page -->
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
-    Coded by <a href="#">Ruth Bokondiné</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Ruth-Bokondine-dev" target="_blank" rel="noopener noreferrer">Ruth Bokondiné</a>.
   </footer>
+
 </body>
 </html>
